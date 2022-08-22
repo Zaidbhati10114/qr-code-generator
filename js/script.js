@@ -16,7 +16,7 @@ const onGenerateSubmit = (e) => {
       generateQRCode(url, size);
       setTimeout(() => {
         const saveUrl = qr.querySelector("img").src;
-        creatSaveBtn();
+        creatSaveBtn(saveUrl);
       }, 50);
     }, 1000);
   }
